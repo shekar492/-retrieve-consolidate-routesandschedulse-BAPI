@@ -1,0 +1,47 @@
+[
+                    {                    
+                      "companyName": "traveltrip",
+                      "availableSeats": 20,
+                      "departureDateTime": "2019-04-16T14:41:41",
+                      "travelRoute": {
+                        "destinationLocation": {
+                          "locationCode": "bl-sg",
+                          "locationDesc" : "beanu vista bangalore"
+                        },
+                        "originLocation": {
+                          "locationCode": "kl-my",
+                          "locationDesc": "klang malaysia"
+                        }
+                      }
+                    },
+                    {                    
+                      "companyName": "fatsGo",
+                      "availableSeats": 30,
+                      "departureDateTime": "2019-04-16T14:41:41",
+                      "travelRoute": {
+                        "destinationLocation": {
+                          "locationCode": "hyd-sg",
+                          "locationDesc" : "beanu vista bangalore"
+                        },
+                        "originLocation": {
+                          "locationCode": "bl-my",
+                          "locationDesc": "klang malaysia"
+                        }
+                      }
+                    },
+                    {                    
+                      "companyName": "traveltrip",
+                      "availableSeats": 25,
+                      "departureDateTime": "2019-04-16T14:41:41",
+                      "travelRoute": {
+                        "destinationLocation": {
+                          "locationCode": "us-sg",
+                          "locationDesc" : "beanu vista bangalore"
+                        },
+                        "originLocation": {
+                          "locationCode": "us-uk",
+                          "locationDesc": "klang malaysia"
+                        }
+                      }
+                    }
+                  ]

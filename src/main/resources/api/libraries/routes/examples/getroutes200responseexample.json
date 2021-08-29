@@ -1,0 +1,21 @@
+[
+                    {
+                      "companyCode": "transNational",
+                      "originLocation": {
+                        "locationCode": "ben-sg",
+                        "locationDesc": "beauna vista bengalore"
+                       },
+                     "destinationLocation": {
+                        "locationCode": "KLG-MY",
+                        "locationDesc": "Klang malaysia"
+                       }
+                    },
+                    {
+                      "companyCode": "transNational",
+                      "originLocation": {
+                        "locationCode": "hyd-blg",
+                        "locationDesc": "hyderabad vista bengalore"
+                       },
+                     "destinationLocation": {
+                        "locationCode": "KLG-MY",
+                        "locationDesc": "Klang malaysia"}}]

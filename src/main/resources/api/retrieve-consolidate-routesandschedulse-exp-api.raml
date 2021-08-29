@@ -1,0 +1,72 @@
+#%RAML 1.0
+title: retrieve-consolidate-routesandschedulse-xp-web-app-api
+
+uses:
+  common: /libraries/commonbusinesslibrary.raml
+types:
+  getroutesresponse: !include /libraries/routes/datatype/getroutes200responsedataType.raml
+  getscheduleresponse: !include /libraries/schedule/datatypes/getschedules200responsedataType.raml
+  commonError: !include /libraries/common/datatypes/commonerrordataType.raml
+
+/bookings:
+  /{transportType}:
+    /routes:
+      get:
+        is:
+          - common.transactionId
+          - common.companyName
+          - common.departureLocation
+          - common.destinationLocation
+        responses:
+          200:
+            body:
+              application/json:
+                type: getroutesresponse
+                example: !include /libraries/routes/examples/getroutes200responseexample.json
+                  
+          400:
+            body:
+               application/json:
+                 type: commonError
+                 example: !include /libraries/common/examples/error400messagefile.json        
+          404:
+            body:
+               application/json:
+                 type: commonError
+                 example: !include /libraries/common/examples/error404messagefile.json
+          500:
+            body:
+               application/json:
+                 type: commonError
+                 example: !include /libraries/common/examples/error500messagefile.json
+    /schedules:
+      get:
+        is:
+          - common.transactionId
+          - common.companyName
+          - common.departureLocation
+          - common.destinationLocation
+          - common.requestTimezone
+        responses:
+          200:
+            body:
+              application/json:
+                type: getscheduleresponse
+                example: !include /libraries/schedule/example/getschedules200responseexamplefile.json                 
+          400:
+            body:
+               application/json:
+                 type: commonError
+                 example: !include /libraries/common/examples/error400messagefile.json
+          404:
+            body:
+               application/json:
+                 type: commonError
+                 example: !include  /libraries/common/examples/error400messagefile.json
+          500:
+            body:
+               application/json:
+                 type: commonError
+                 example: !include /libraries/common/examples/error500messagefile.json
+                   
+              

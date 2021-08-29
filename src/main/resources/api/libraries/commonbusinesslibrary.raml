@@ -1,0 +1,8 @@
+#%RAML 1.0 Library
+usage:
+traits:
+  transactionId: !include /libraries/common/traits/headertransactionidtraits.raml
+  companyName: !include /libraries/common/traits/queryparamscompanyNametrait.raml
+  departureLocation: !include /libraries/common/traits/queryparamsdepatloacationtrait.raml
+  destinationLocation: !include /libraries/common/traits/queryparamdestinationtrait.raml
+  requestTimezone: !include /libraries/common/traits/requesttimezonetrait.raml

@@ -1,0 +1,31 @@
+#%RAML 1.0 DataType
+  type: array
+  items:
+    type: object
+    properties:
+      companyCode:
+        type: string
+        required: true
+        example: "transNational"
+      originLocation:
+        type: object
+        properties:
+          locationCode:
+            type: string
+            required: true
+            example: "klg-my"
+          locationDesc:
+            type: string
+            required: true
+            example: "klang malaysia"
+      destinationLocation:
+        type: object
+        properties:
+          locationCode:
+            type: string
+            required: true
+            example: "blg-sg"
+          locationDesc:
+            type: string
+            required: true
+            example: "bangalore via singapore"
